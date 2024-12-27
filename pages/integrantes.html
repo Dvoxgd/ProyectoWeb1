@@ -1,0 +1,83 @@
+<section class="section-integrantes">
+    <div class="container titulo">
+        <h2>Directores</h2>
+    </div>
+    <div class="container">
+        <div class="mb-3">
+            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#insertmodal" id="insertar-integrante"><h3>Nuevo Director</h3></button>
+        </div>
+
+        <table class="table m-auto table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Instrumento</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbody-integrantes">
+
+            </tbody>
+        </table>
+
+    </div>
+</section>
+
+<!--Modal-->
+<div class="modal fade" id="insertmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="exampleModalLabel">Nuevo Integrante</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="formInsert">
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" class="form-control" required minlength="5" placeholder="Nombre del integrante" id="txtIntegranteNombre">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" required minlength="1" placeholder="Apellido" id="txtIntegranteApellido">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" required minlength="1" placeholder="Instrumento" id="txtIntegranteInstrumento">
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="exampleModalLabel">Nuevo Integrante</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="formInsert">
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" class="form-control" required minlength="5" placeholder="Nombre del integrante" id="txtIntegranteUpdateNombre">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" required minlength="1" placeholder="Apellido" id="txtIntegranteUpdateApellido">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" required minlength="1" placeholder="Instrumento" id="txtIntegranteUpdateInstrumento">
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
